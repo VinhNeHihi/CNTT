@@ -1,0 +1,31 @@
+
+<head>
+  <style>
+    div{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<div class="pl-5" style="padding-left: 20%; padding-top: 40px">
+
+  <form action="" method="post">
+    <div class="form-row">
+        <select class="form-select-sm col-md-3" aria-label=".form-select-sm example">
+         <option selected>id người dùng</option>
+         {{#each id}}
+        <option value={{this.id}}>{{this.id}}</option>
+        {{/each}}
+        </select>
+      <div class="forms-layouts col-md-3">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Full Name">
+      </div>
+    <div class="form-group col-md-6">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</div>
+<div class="form-group">
+</div>
+</form>
+</div>
