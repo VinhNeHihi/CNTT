@@ -11,13 +11,13 @@
 
   <form action="" method="post">
     <div class="form-row">
+      <div class="forms-layouts col-md-3">
         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-         <option selected>id người dùng</option>
+         <option selected>Id người dùng</option>
          {{#each id}}
         <option value={{this.id}}>{{this.id}}</option>
         {{/each}}
         </select>
-      <div class="forms-layouts col-md-3">
         <label>Full Name</label>
         <input type="text" class="form-control" name="name" placeholder="Full Name">
       </div>
